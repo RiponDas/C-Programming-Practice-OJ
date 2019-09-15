@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+    int n,m;
+    scanf("%d",&n);
+    printf("%d\t",n);
+    do
+    {
+        if(n%2==0)
+        {
+            n=(n/2);
+            printf("%d\t",n);
+        }
+        else
+        {
+            n=(3*n)+1;
+            printf("%d\t",n);
+        }
+    }
+    while(n!=1);
+}
